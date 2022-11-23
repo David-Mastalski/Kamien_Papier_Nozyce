@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>
+      <span>rock</span>
+      <span>paper</span>
+      <span>scissors</span>
+    </h1>
+
+    <div class="score">
+      <span>score</span>
+      <strong class="all-points"></strong>
+    </div>
+  </header>
+
+  <main>
+
+    <div class="container-600">
+      <div class="option">
+
+        <button id="scissors" class="button button-scissors">
+          <div class="button-image-container">
+            <img src="images/icon-scissors.svg" alt="scissors">
+          </div>
+        </button>
+  
+        <button id="paper" class="button button-paper">
+          <div class="button-image-container">
+            <img src="images/icon-paper.svg" alt="paper">
+          </div>
+        </button>
+  
+        <button id="rock" class="button button-rock">
+          <div class="button-image-container">
+            <img src="images/icon-rock.svg" alt="rock">
+          </div>
+        </button>
+  
+      </div>
+    </div>
+
+    <section class="container-600 change-size">
+      <div class="fight dn">
+
+        <div class="pick">
+          <span class="pick-title">your pick</span>
+  
+          <div class="pick-btn-container my-pick"></div>
+        </div>
+
+        <div class="result">
+          <span class="result-info"></span>
+          <button class="play-again-btn">play again</button>
+        </div>
+
+        <div class="pick">
+          <span class="pick-title">the house picked</span>
+  
+          <div class="pick-btn-container house-pick">
+            <div class="house-pick-shadow"></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <script src="js.js"></script>
+</body>
+</html>
